@@ -1,0 +1,120 @@
+.dashboard-root {
+  padding: 20px;
+}
+
+/* Dashboard Card Styles */
+.dashboard-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #fff;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+}
+
+/* Balance Text Style */
+.balance-text {
+  color: #4caf50; /* A softer green */
+  font-size: 1.75rem; /* Larger font size for emphasis */
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+/* Referral Code Box Style */
+.referral-code-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Added gap between text and icon */
+}
+
+/* Referral Code Text Style */
+.referral-code-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Withdraw Button Style */
+.withdraw-button {
+  margin-top: 20px;
+  background-color: #1976d2; /* Consistent color with references button */
+  color: #fff;
+  border-radius: 8px;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.withdraw-button:hover {
+  background-color: #1565c0;
+}
+
+/* References Button Style */
+.references-button {
+  margin-top: 10px;
+  background-color: #1976d2;
+  color: white;
+  text-transform: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.references-button:hover {
+  background-color: #155a8a;
+}
+
+/* Copy Icon Button Style */
+.copy-icon-button {
+  padding: 0;
+  margin-left: 10px;
+  color: #1976d2;
+  transition: color 0.3s ease;
+}
+
+.copy-icon-button:hover {
+  color: #155a8a;
+}
+
+/* References Table Styles */
+.references-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse; /* Ensures borders collapse */
+}
+
+.references-table th,
+.references-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.references-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.references-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .dashboard-root {
+    padding: 10px;
+  }
+
+  .dashboard-card {
+    width: 100%;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+  }
+}
